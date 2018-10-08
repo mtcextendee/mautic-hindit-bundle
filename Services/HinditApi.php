@@ -86,8 +86,6 @@ class HinditApi extends AbstractSmsApi
             $data = $integration->getDecryptedApiKeys();
             $data['mobile'] = $contact->getMobile();
             $data['text'] = $content;
-            $data['route_id'] = 3;
-            $data['Unicode'] = 0;
             $response = $this->http->get(self::BASE_URL.'?'.http_build_query($data));
             if (strpos($response->body, 'The messages has been sent') !== false) {
                 return true;

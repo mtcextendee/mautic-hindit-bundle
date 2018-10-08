@@ -50,6 +50,8 @@ class HinditIntegration extends AbstractIntegration
             'loginID'  => 'mautic.plugin.hindit.login.id',
             'password' => 'mautic.plugin.hindit.password',
             'senderid' => 'mautic.plugin.hindit.sender.id',
+            'Unicode' => 'mautic.plugin.hindit.unicode',
+            'route_id' => 'mautic.plugin.hindit.route.id',
         ];
     }
 
